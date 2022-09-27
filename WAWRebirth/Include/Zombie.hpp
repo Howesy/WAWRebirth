@@ -1,7 +1,8 @@
 #pragma once
 #include <cstdint>
 
-namespace Zombie
+struct Zombie
 {
-	const ptrdiff_t health = 0x1C8;
-}
+	char pad_0000[456];
+	int32_t health;
+};
